@@ -1,0 +1,107 @@
+@import url('http://fonts.googleapis.com/css?family=Kalam');
+
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
+ 
+.container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 1fr);
+  grid-template-rows: auto auto auto auto;
+  grid-gap: 5px;
+  grid-template-areas:
+    ". . i i i i . . . . . ."
+    ". . . q q q q . . . . ."
+    ". . . . . . a a . . . ."
+    ". . s s s s s s . . . ."
+    ". . . . f f f f f . . .";
+ }
+
+a {
+  color: black;
+  }
+
+a:hover {
+  text-decoration: none;
+  }
+
+h1 {
+font-family: 'Libre Baskerville', serif;
+  font-size: 28px;
+  color: black;
+  }
+
+h2 {
+    font-family: Kalam;
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  }
+
+h3 {
+  font-family: Kalam;
+color: white;
+text-align: center;
+  font-size: 24px;
+}
+
+h4 {
+font-family: 'Libre Baskerville', serif;
+  font-size: 14px;
+  color: black;
+  }
+
+body {
+  margin-top: 60px;
+}
+
+.btn-default {
+  border-radius: 5px;
+  background-color: #0033cc;
+  padding: 0.5em 0.75em;
+  color: white;
+  margin: 0px 5px 10px 0px;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  box-shadow: 0 5px #fff;
+}
+.btn-default:hover {
+  background-color: #3366ff;
+}
+.btn-default:active {
+background-color: #0033cc;
+  box-shadow: 0 3px #fff;
+  transform: translateY(4px);
+}
+
+.intro {
+  grid-area: i;
+  background-color: #ffde40;
+  padding: 15px;
+    }
+
+.quoteblock {
+  grid-area: q;
+  background-color: #999999;
+  padding: 15px;
+    }
+
+.quoteblock2 {
+  grid-area: a;
+  background-color: #00b300;
+  padding: 15px;
+    }
+
+.social {
+  grid-area: s;
+}
+
+.footer {
+  grid-area: f;
+  }
+
+
+.imagebig {
+  width: 100px;
+}
